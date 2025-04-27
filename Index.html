@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MIA'S CAKES AND TREATS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>MIA'S CAKES AND TREATS</h1>
+    <p class="tagline">Baked with love, served with sweetness.</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>Meet Mia</h2>
+    <p>Mia discovered her passion for baking as a teenager. With every cupcake and cookie, she shares her love for creating sweet memories. What started as a hobby has now become a dream come true!</p>
+  </section>
+
+  <!-- Order Section -->
+  <section id="order">
+    <h2>Place Your Order</h2>
+    <p class="notice"><strong>Important:</strong> Please place your orders at least one week in advance.</p>
+
+    <form id="orderForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="pickup">Pick-up Date & Time:</label>
+      <input type="datetime-local" id="pickup" required>
+
+      <label>Select Treats:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="treats" value="Cupcakes"> Cupcakes</label>
+        <label><input type="checkbox" name="treats" value="Cookies"> Cookies</label>
+        <label><input type="checkbox" name="treats" value="Cakes"> Cakes</label>
+        <label><input type="checkbox" name="treats" value="Others"> Others</label>
+      </div>
+
+      <label>Quantity per Item (1–500):</label>
+      <input type="number" id="quantity" min="1" max="500" value="1">
+
+      <label for="description">Description (custom details):</label>
+      <textarea id="description" rows="3"></textarea>
+
+      <label for="allergies">Allergy Information:</label>
+      <textarea id="allergies" rows="2"></textarea>
+
+      <button type="button" id="whatsappOrder">Order via WhatsApp</button>
+    </form>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews">
+    <h2>Client Reviews</h2>
+    <form id="reviewForm">
+      <input type="text" id="newReview" placeholder="Write a review..." required>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="reviewList"></div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <a href="https://wa.me/260971607591" class="whatsapp-button" target="_blank">
+      <i class="fab fa-whatsapp"></i> Chat with Mia on WhatsApp
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><i class="fab fa-instagram"></i> @mias_cakes_and_treats</p>
+    <p>Website created by Samirah Muhammed Xareed 0972777222</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
