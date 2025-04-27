@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background: #ffc0cb;
+  padding: 40px 20px;
+}
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+}
+header .tagline {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* About Section */
+#about h2, #order h2, #reviews h2, #contact h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  color: #ff69b4;
+}
+
+/* Order Section */
+.notice {
+  background: #ffe4e1;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkbox-group {
+  margin: 10px 0;
+}
+
+button {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #ff1493;
+}
+
+/* Review Section */
+#reviewList {
+  margin-top: 20px;
+}
+
+.review-card {
+  background: #ffe4e1;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+/* Contact Section */
+.whatsapp-button {
+  background: #25D366;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.whatsapp-button:hover {
+  background: #1ebe57;
+}
+
+/* Footer */
+footer {
+  background: #ffc0cb;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  section {
+    padding: 20px 10px;
+  }
+}
