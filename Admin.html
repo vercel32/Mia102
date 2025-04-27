@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Login - Mia's Cakes and Treats</title>
+  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="login-container" id="loginSection">
+  <h1>Admin Login</h1>
+  <input type="password" id="adminPassword" placeholder="Enter Password">
+  <button onclick="login()">Login</button>
+  <p class="error" id="errorMessage"></p>
+</div>
+
+<div class="admin-panel" id="adminPanel" style="display:none;">
+  <h1>Welcome, Mia!</h1>
+
+  <section class="edit-section">
+    <h2>Edit About Section</h2>
+    <textarea id="aboutText" rows="6">Mia discovered her passion for baking as a teenager...</textarea>
+    <button onclick="saveAbout()">Save About Text</button>
+  </section>
+
+  <section class="edit-section">
+    <h2>Edit Treat Options</h2>
+    <textarea id="treatsText" rows="6">Cupcakes, Cookies, Cakes, Others</textarea>
+    <button onclick="saveTreats()">Save Treats</button>
+  </section>
+
+  <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
